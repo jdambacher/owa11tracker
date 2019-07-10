@@ -1,0 +1,17 @@
+version: '3'
+services:
+  app:
+    build: app
+    ports:
+      - "8000:8000"
+    links:
+      - mysql
+  mysql:
+    image: mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=null
+      - MYSQL_DATABASE=owa11
+      - MYSQL_USER=owa11
+      - MYSQL_PASSWORD=null
+    volumes:
+      - ./mysql:/var/lib/mysql
