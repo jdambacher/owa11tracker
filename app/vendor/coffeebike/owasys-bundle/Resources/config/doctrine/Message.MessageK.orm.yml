@@ -1,7 +1,0 @@
-CoffeeBike\OwasysBundle\Entity\Message\MessageK:
-    type: entity
-    table: null
-    fields:
-        km:
-            type: bigint
-    lifecycleCallbacks: {  }

@@ -1,7 +1,0 @@
-CoffeeBike\OwasysBundle\Entity\Message\MessageV:
-    type: entity
-    table: null
-    fields:
-        movement:
-            type: boolean
-    lifecycleCallbacks: {  }

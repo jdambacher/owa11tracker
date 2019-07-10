@@ -1,8 +1,0 @@
-CoffeeBike\OwasysBundle\Entity\Message\MessageB:
-    type: entity
-    table: null
-    fields:
-        byeCode:
-            type: integer
-            column: bye_code
-    lifecycleCallbacks: {  }
