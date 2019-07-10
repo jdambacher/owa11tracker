@@ -1,0 +1,152 @@
+<?php return [PHP_INT_MAX, static function () {
+
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+            clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'name' => [
+                    'CoffeeBike\\OwasysBundle\\Entity\\Tracker',
+                ],
+                'namespace' => [
+                    'CoffeeBike\\OwasysBundle\\Entity',
+                ],
+                'rootEntityName' => [
+                    'CoffeeBike\\OwasysBundle\\Entity\\Tracker',
+                ],
+                'customRepositoryClassName' => [
+                    'CoffeeBike\\OwasysBundle\\Entity\\TrackerRepository',
+                ],
+                'identifier' => [
+                    [
+                        'id',
+                    ],
+                ],
+                'generatorType' => [
+                    4,
+                ],
+                'fieldMappings' => [
+                    [
+                        'id' => [
+                            'id' => true,
+                            'fieldName' => 'id',
+                            'type' => 'integer',
+                            'columnName' => 'id',
+                        ],
+                        'imei' => [
+                            'fieldName' => 'imei',
+                            'type' => 'string',
+                            'length' => '15',
+                            'columnName' => 'imei',
+                        ],
+                        'phoneNo' => [
+                            'fieldName' => 'phoneNo',
+                            'type' => 'string',
+                            'length' => 255,
+                            'columnName' => 'phone_no',
+                        ],
+                        'icc' => [
+                            'fieldName' => 'icc',
+                            'type' => 'string',
+                            'length' => '20',
+                            'columnName' => 'icc',
+                        ],
+                        'imsi' => [
+                            'fieldName' => 'imsi',
+                            'type' => 'string',
+                            'length' => '15',
+                            'columnName' => 'imsi',
+                        ],
+                        'alarm' => [
+                            'fieldName' => 'alarm',
+                            'type' => 'boolean',
+                            'columnName' => 'alarm',
+                        ],
+                        'alarmPhoneNo' => [
+                            'fieldName' => 'alarmPhoneNo',
+                            'type' => 'string',
+                            'length' => 255,
+                            'nullable' => true,
+                            'columnName' => 'alarm_phone_no',
+                        ],
+                        'sellingMode' => [
+                            'fieldName' => 'sellingMode',
+                            'type' => 'boolean',
+                            'nullable' => true,
+                            'columnName' => 'selling_mode',
+                        ],
+                        'sellingModeDate' => [
+                            'fieldName' => 'sellingModeDate',
+                            'type' => 'datetime',
+                            'nullable' => true,
+                            'columnName' => 'selling_mode_date',
+                        ],
+                        'defaultLatitude' => [
+                            'fieldName' => 'defaultLatitude',
+                            'type' => 'float',
+                            'nullable' => true,
+                            'columnName' => 'default_latitude',
+                        ],
+                        'defaultLongitude' => [
+                            'fieldName' => 'defaultLongitude',
+                            'type' => 'float',
+                            'nullable' => true,
+                            'columnName' => 'default_longitude',
+                        ],
+                        'amountOfAlarmMessages' => [
+                            'fieldName' => 'amountOfAlarmMessages',
+                            'type' => 'integer',
+                            'columnName' => 'amount_of_alarm_messages',
+                        ],
+                    ],
+                ],
+                'fieldNames' => [
+                    [
+                        'id' => 'id',
+                        'imei' => 'imei',
+                        'phone_no' => 'phoneNo',
+                        'icc' => 'icc',
+                        'imsi' => 'imsi',
+                        'alarm' => 'alarm',
+                        'alarm_phone_no' => 'alarmPhoneNo',
+                        'selling_mode' => 'sellingMode',
+                        'selling_mode_date' => 'sellingModeDate',
+                        'default_latitude' => 'defaultLatitude',
+                        'default_longitude' => 'defaultLongitude',
+                        'amount_of_alarm_messages' => 'amountOfAlarmMessages',
+                    ],
+                ],
+                'columnNames' => [
+                    [
+                        'id' => 'id',
+                        'imei' => 'imei',
+                        'phoneNo' => 'phone_no',
+                        'icc' => 'icc',
+                        'imsi' => 'imsi',
+                        'alarm' => 'alarm',
+                        'alarmPhoneNo' => 'alarm_phone_no',
+                        'sellingMode' => 'selling_mode',
+                        'sellingModeDate' => 'selling_mode_date',
+                        'defaultLatitude' => 'default_latitude',
+                        'defaultLongitude' => 'default_longitude',
+                        'amountOfAlarmMessages' => 'amount_of_alarm_messages',
+                    ],
+                ],
+                'table' => [
+                    [
+                        'name' => 'tracker',
+                    ],
+                ],
+                'idGenerator' => [
+                    $o[1],
+                ],
+            ],
+        ],
+        $o[0],
+        []
+    );
+
+}];

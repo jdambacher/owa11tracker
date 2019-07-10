@@ -1,0 +1,143 @@
+<?php return [PHP_INT_MAX, static function () {
+
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+            clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'name' => [
+                    'CoffeeBike\\OwasysBundle\\Entity\\Message\\MessageA',
+                ],
+                'namespace' => [
+                    'CoffeeBike\\OwasysBundle\\Entity\\Message',
+                ],
+                'rootEntityName' => [
+                    'CoffeeBike\\OwasysBundle\\Entity\\Message\\MessageA',
+                ],
+                'customRepositoryClassName' => [
+                    'CoffeeBike\\OwasysBundle\\Entity\\Message\\MessageARepository',
+                ],
+                'identifier' => [
+                    [
+                        'id',
+                    ],
+                ],
+                'generatorType' => [
+                    4,
+                ],
+                'fieldMappings' => [
+                    [
+                        'id' => [
+                            'id' => true,
+                            'fieldName' => 'id',
+                            'type' => 'integer',
+                            'columnName' => 'id',
+                            'declared' => 'CoffeeBike\\OwasysBundle\\Entity\\AbstractMessage',
+                        ],
+                        'triggerSource' => [
+                            'fieldName' => 'triggerSource',
+                            'type' => 'string',
+                            'columnName' => 'trigger_source',
+                            'length' => '1',
+                            'declared' => 'CoffeeBike\\OwasysBundle\\Entity\\AbstractMessage',
+                        ],
+                        'timestamp' => [
+                            'fieldName' => 'timestamp',
+                            'type' => 'bigint',
+                            'columnName' => 'timestamp',
+                            'declared' => 'CoffeeBike\\OwasysBundle\\Entity\\AbstractMessage',
+                        ],
+                        'reason' => [
+                            'fieldName' => 'reason',
+                            'type' => 'integer',
+                            'columnName' => 'reason',
+                        ],
+                        'info' => [
+                            'fieldName' => 'info',
+                            'type' => 'integer',
+                            'nullable' => true,
+                            'columnName' => 'info',
+                        ],
+                        'km' => [
+                            'fieldName' => 'km',
+                            'type' => 'integer',
+                            'nullable' => true,
+                            'columnName' => 'km',
+                        ],
+                    ],
+                ],
+                'fieldNames' => [
+                    [
+                        'id' => 'id',
+                        'trigger_source' => 'triggerSource',
+                        'timestamp' => 'timestamp',
+                        'reason' => 'reason',
+                        'info' => 'info',
+                        'km' => 'km',
+                    ],
+                ],
+                'columnNames' => [
+                    [
+                        'id' => 'id',
+                        'triggerSource' => 'trigger_source',
+                        'timestamp' => 'timestamp',
+                        'reason' => 'reason',
+                        'info' => 'info',
+                        'km' => 'km',
+                    ],
+                ],
+                'table' => [
+                    [
+                        'name' => 'message_a',
+                    ],
+                ],
+                'associationMappings' => [
+                    [
+                        'tracker' => [
+                            'fieldName' => 'tracker',
+                            'targetEntity' => 'CoffeeBike\\OwasysBundle\\Entity\\Tracker',
+                            'joinColumns' => [
+                                [
+                                    'referencedColumnName' => 'id',
+                                    'name' => 'tracker_id',
+                                ],
+                            ],
+                            'type' => 2,
+                            'mappedBy' => null,
+                            'inversedBy' => null,
+                            'isOwningSide' => true,
+                            'sourceEntity' => 'CoffeeBike\\OwasysBundle\\Entity\\Message\\MessageA',
+                            'fetch' => 2,
+                            'cascade' => [],
+                            'isCascadeRemove' => false,
+                            'isCascadePersist' => false,
+                            'isCascadeRefresh' => false,
+                            'isCascadeMerge' => false,
+                            'isCascadeDetach' => false,
+                            'sourceToTargetKeyColumns' => [
+                                'tracker_id' => 'id',
+                            ],
+                            'joinColumnFieldNames' => [
+                                'tracker_id' => 'tracker_id',
+                            ],
+                            'targetToSourceKeyColumns' => [
+                                'id' => 'tracker_id',
+                            ],
+                            'orphanRemoval' => false,
+                            'declared' => 'CoffeeBike\\OwasysBundle\\Entity\\AbstractMessage',
+                        ],
+                    ],
+                ],
+                'idGenerator' => [
+                    $o[1],
+                ],
+            ],
+        ],
+        $o[0],
+        []
+    );
+
+}];

@@ -1,0 +1,22 @@
+CoffeeBike\OwasysBundle\Entity\Message\MessageI:
+    type: entity
+    table: null
+    fields:
+        iox:
+            type: integer
+        ioType:
+            type: integer
+            column: io_type
+        ioVal:
+            type: integer
+            column: io_val
+        intsToSend:
+            type: integer
+            column: ints_to_send
+        intsElapsed:
+            type: integer
+            column: ints_elapsed
+        intsTotal:
+            type: integer
+            column: ints_total
+    lifecycleCallbacks: {  }

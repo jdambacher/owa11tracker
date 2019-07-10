@@ -1,0 +1,248 @@
+<?php return [PHP_INT_MAX, static function () {
+
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+            clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'name' => [
+                    'CoffeeBike\\OwasysBundle\\Entity\\Message\\MessageF',
+                ],
+                'namespace' => [
+                    'CoffeeBike\\OwasysBundle\\Entity\\Message',
+                ],
+                'rootEntityName' => [
+                    'CoffeeBike\\OwasysBundle\\Entity\\Message\\MessageF',
+                ],
+                'customRepositoryClassName' => [
+                    'CoffeeBike\\OwasysBundle\\Entity\\AbstractMessageRepository',
+                ],
+                'identifier' => [
+                    [
+                        'id',
+                    ],
+                ],
+                'generatorType' => [
+                    4,
+                ],
+                'fieldMappings' => [
+                    [
+                        'id' => [
+                            'id' => true,
+                            'fieldName' => 'id',
+                            'type' => 'integer',
+                            'columnName' => 'id',
+                            'declared' => 'CoffeeBike\\OwasysBundle\\Entity\\AbstractMessage',
+                        ],
+                        'triggerSource' => [
+                            'fieldName' => 'triggerSource',
+                            'type' => 'string',
+                            'columnName' => 'trigger_source',
+                            'length' => '1',
+                            'declared' => 'CoffeeBike\\OwasysBundle\\Entity\\AbstractMessage',
+                        ],
+                        'timestamp' => [
+                            'fieldName' => 'timestamp',
+                            'type' => 'bigint',
+                            'columnName' => 'timestamp',
+                            'declared' => 'CoffeeBike\\OwasysBundle\\Entity\\AbstractMessage',
+                        ],
+                        'externalVoltage' => [
+                            'fieldName' => 'externalVoltage',
+                            'type' => 'float',
+                            'columnName' => 'external_voltage',
+                            'nullable' => true,
+                        ],
+                        'internalVoltage' => [
+                            'fieldName' => 'internalVoltage',
+                            'type' => 'string',
+                            'columnName' => 'internal_voltage',
+                            'nullable' => true,
+                        ],
+                        'movement' => [
+                            'fieldName' => 'movement',
+                            'type' => 'boolean',
+                            'nullable' => true,
+                            'columnName' => 'movement',
+                        ],
+                        'positionAccuracy' => [
+                            'fieldName' => 'positionAccuracy',
+                            'type' => 'string',
+                            'columnName' => 'position_accuracy',
+                            'nullable' => true,
+                        ],
+                        'latitude' => [
+                            'fieldName' => 'latitude',
+                            'type' => 'float',
+                            'nullable' => true,
+                            'columnName' => 'latitude',
+                        ],
+                        'longitude' => [
+                            'fieldName' => 'longitude',
+                            'type' => 'float',
+                            'nullable' => true,
+                            'columnName' => 'longitude',
+                        ],
+                        'cellId' => [
+                            'fieldName' => 'cellId',
+                            'type' => 'bigint',
+                            'columnName' => 'cell_id',
+                            'nullable' => true,
+                        ],
+                        'lac' => [
+                            'fieldName' => 'lac',
+                            'type' => 'bigint',
+                            'nullable' => true,
+                            'columnName' => 'lac',
+                        ],
+                        'plmn' => [
+                            'fieldName' => 'plmn',
+                            'type' => 'string',
+                            'nullable' => true,
+                            'columnName' => 'plmn',
+                        ],
+                        'rssi' => [
+                            'fieldName' => 'rssi',
+                            'type' => 'integer',
+                            'nullable' => true,
+                            'columnName' => 'rssi',
+                        ],
+                        'gpsCoverage' => [
+                            'fieldName' => 'gpsCoverage',
+                            'type' => 'boolean',
+                            'columnName' => 'gps_coverage',
+                            'nullable' => true,
+                        ],
+                        'traveledKms' => [
+                            'fieldName' => 'traveledKms',
+                            'type' => 'bigint',
+                            'columnName' => 'traveled_kms',
+                            'nullable' => true,
+                        ],
+                        'gpsSpeed' => [
+                            'fieldName' => 'gpsSpeed',
+                            'type' => 'float',
+                            'columnName' => 'gps_speed',
+                            'nullable' => true,
+                        ],
+                        'lastValidPositionTimestamp' => [
+                            'fieldName' => 'lastValidPositionTimestamp',
+                            'type' => 'bigint',
+                            'columnName' => 'last_valid_position_timestamp',
+                            'nullable' => true,
+                        ],
+                        'outsideGeofenceFlag' => [
+                            'fieldName' => 'outsideGeofenceFlag',
+                            'type' => 'boolean',
+                            'columnName' => 'outside_geofence_flag',
+                            'nullable' => true,
+                        ],
+                        'courseOverGround' => [
+                            'fieldName' => 'courseOverGround',
+                            'type' => 'float',
+                            'columnName' => 'course_over_ground',
+                            'nullable' => true,
+                        ],
+                    ],
+                ],
+                'fieldNames' => [
+                    [
+                        'id' => 'id',
+                        'trigger_source' => 'triggerSource',
+                        'timestamp' => 'timestamp',
+                        'external_voltage' => 'externalVoltage',
+                        'internal_voltage' => 'internalVoltage',
+                        'movement' => 'movement',
+                        'position_accuracy' => 'positionAccuracy',
+                        'latitude' => 'latitude',
+                        'longitude' => 'longitude',
+                        'cell_id' => 'cellId',
+                        'lac' => 'lac',
+                        'plmn' => 'plmn',
+                        'rssi' => 'rssi',
+                        'gps_coverage' => 'gpsCoverage',
+                        'traveled_kms' => 'traveledKms',
+                        'gps_speed' => 'gpsSpeed',
+                        'last_valid_position_timestamp' => 'lastValidPositionTimestamp',
+                        'outside_geofence_flag' => 'outsideGeofenceFlag',
+                        'course_over_ground' => 'courseOverGround',
+                    ],
+                ],
+                'columnNames' => [
+                    [
+                        'id' => 'id',
+                        'triggerSource' => 'trigger_source',
+                        'timestamp' => 'timestamp',
+                        'externalVoltage' => 'external_voltage',
+                        'internalVoltage' => 'internal_voltage',
+                        'movement' => 'movement',
+                        'positionAccuracy' => 'position_accuracy',
+                        'latitude' => 'latitude',
+                        'longitude' => 'longitude',
+                        'cellId' => 'cell_id',
+                        'lac' => 'lac',
+                        'plmn' => 'plmn',
+                        'rssi' => 'rssi',
+                        'gpsCoverage' => 'gps_coverage',
+                        'traveledKms' => 'traveled_kms',
+                        'gpsSpeed' => 'gps_speed',
+                        'lastValidPositionTimestamp' => 'last_valid_position_timestamp',
+                        'outsideGeofenceFlag' => 'outside_geofence_flag',
+                        'courseOverGround' => 'course_over_ground',
+                    ],
+                ],
+                'table' => [
+                    [
+                        'name' => 'message_f',
+                    ],
+                ],
+                'associationMappings' => [
+                    [
+                        'tracker' => [
+                            'fieldName' => 'tracker',
+                            'targetEntity' => 'CoffeeBike\\OwasysBundle\\Entity\\Tracker',
+                            'joinColumns' => [
+                                [
+                                    'referencedColumnName' => 'id',
+                                    'name' => 'tracker_id',
+                                ],
+                            ],
+                            'type' => 2,
+                            'mappedBy' => null,
+                            'inversedBy' => null,
+                            'isOwningSide' => true,
+                            'sourceEntity' => 'CoffeeBike\\OwasysBundle\\Entity\\Message\\MessageF',
+                            'fetch' => 2,
+                            'cascade' => [],
+                            'isCascadeRemove' => false,
+                            'isCascadePersist' => false,
+                            'isCascadeRefresh' => false,
+                            'isCascadeMerge' => false,
+                            'isCascadeDetach' => false,
+                            'sourceToTargetKeyColumns' => [
+                                'tracker_id' => 'id',
+                            ],
+                            'joinColumnFieldNames' => [
+                                'tracker_id' => 'tracker_id',
+                            ],
+                            'targetToSourceKeyColumns' => [
+                                'id' => 'tracker_id',
+                            ],
+                            'orphanRemoval' => false,
+                            'declared' => 'CoffeeBike\\OwasysBundle\\Entity\\AbstractMessage',
+                        ],
+                    ],
+                ],
+                'idGenerator' => [
+                    $o[1],
+                ],
+            ],
+        ],
+        $o[0],
+        []
+    );
+
+}];

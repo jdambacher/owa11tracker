@@ -1,0 +1,155 @@
+<?php return [PHP_INT_MAX, static function () {
+
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+            clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'name' => [
+                    'CoffeeBike\\OwasysBundle\\Entity\\Message\\MessageG',
+                ],
+                'namespace' => [
+                    'CoffeeBike\\OwasysBundle\\Entity\\Message',
+                ],
+                'rootEntityName' => [
+                    'CoffeeBike\\OwasysBundle\\Entity\\Message\\MessageG',
+                ],
+                'customRepositoryClassName' => [
+                    'CoffeeBike\\OwasysBundle\\Entity\\AbstractMessageRepository',
+                ],
+                'identifier' => [
+                    [
+                        'id',
+                    ],
+                ],
+                'generatorType' => [
+                    4,
+                ],
+                'fieldMappings' => [
+                    [
+                        'id' => [
+                            'id' => true,
+                            'fieldName' => 'id',
+                            'type' => 'integer',
+                            'columnName' => 'id',
+                            'declared' => 'CoffeeBike\\OwasysBundle\\Entity\\AbstractMessage',
+                        ],
+                        'triggerSource' => [
+                            'fieldName' => 'triggerSource',
+                            'type' => 'string',
+                            'columnName' => 'trigger_source',
+                            'length' => '1',
+                            'declared' => 'CoffeeBike\\OwasysBundle\\Entity\\AbstractMessage',
+                        ],
+                        'timestamp' => [
+                            'fieldName' => 'timestamp',
+                            'type' => 'bigint',
+                            'columnName' => 'timestamp',
+                            'declared' => 'CoffeeBike\\OwasysBundle\\Entity\\AbstractMessage',
+                        ],
+                        'outOfGeofence' => [
+                            'fieldName' => 'outOfGeofence',
+                            'type' => 'boolean',
+                            'columnName' => 'out_of_geofence',
+                        ],
+                        'geofenceLat' => [
+                            'fieldName' => 'geofenceLat',
+                            'type' => 'float',
+                            'columnName' => 'geofence_lat',
+                        ],
+                        'geofenceLon' => [
+                            'fieldName' => 'geofenceLon',
+                            'type' => 'float',
+                            'columnName' => 'geofence_lon',
+                        ],
+                        'currentLat' => [
+                            'fieldName' => 'currentLat',
+                            'type' => 'float',
+                            'columnName' => 'current_lat',
+                        ],
+                        'currentLon' => [
+                            'fieldName' => 'currentLon',
+                            'type' => 'float',
+                            'columnName' => 'current_lon',
+                        ],
+                    ],
+                ],
+                'fieldNames' => [
+                    [
+                        'id' => 'id',
+                        'trigger_source' => 'triggerSource',
+                        'timestamp' => 'timestamp',
+                        'out_of_geofence' => 'outOfGeofence',
+                        'geofence_lat' => 'geofenceLat',
+                        'geofence_lon' => 'geofenceLon',
+                        'current_lat' => 'currentLat',
+                        'current_lon' => 'currentLon',
+                    ],
+                ],
+                'columnNames' => [
+                    [
+                        'id' => 'id',
+                        'triggerSource' => 'trigger_source',
+                        'timestamp' => 'timestamp',
+                        'outOfGeofence' => 'out_of_geofence',
+                        'geofenceLat' => 'geofence_lat',
+                        'geofenceLon' => 'geofence_lon',
+                        'currentLat' => 'current_lat',
+                        'currentLon' => 'current_lon',
+                    ],
+                ],
+                'table' => [
+                    [
+                        'name' => 'message_g',
+                    ],
+                ],
+                'associationMappings' => [
+                    [
+                        'tracker' => [
+                            'fieldName' => 'tracker',
+                            'targetEntity' => 'CoffeeBike\\OwasysBundle\\Entity\\Tracker',
+                            'joinColumns' => [
+                                [
+                                    'referencedColumnName' => 'id',
+                                    'name' => 'tracker_id',
+                                ],
+                            ],
+                            'type' => 2,
+                            'mappedBy' => null,
+                            'inversedBy' => null,
+                            'isOwningSide' => true,
+                            'sourceEntity' => 'CoffeeBike\\OwasysBundle\\Entity\\Message\\MessageG',
+                            'fetch' => 2,
+                            'cascade' => [],
+                            'isCascadeRemove' => false,
+                            'isCascadePersist' => false,
+                            'isCascadeRefresh' => false,
+                            'isCascadeMerge' => false,
+                            'isCascadeDetach' => false,
+                            'sourceToTargetKeyColumns' => [
+                                'tracker_id' => 'id',
+                            ],
+                            'joinColumnFieldNames' => [
+                                'tracker_id' => 'tracker_id',
+                            ],
+                            'targetToSourceKeyColumns' => [
+                                'id' => 'tracker_id',
+                            ],
+                            'orphanRemoval' => false,
+                            'declared' => 'CoffeeBike\\OwasysBundle\\Entity\\AbstractMessage',
+                        ],
+                    ],
+                ],
+                'idGenerator' => [
+                    $o[1],
+                ],
+            ],
+        ],
+        $o[0],
+        []
+    );
+
+}];

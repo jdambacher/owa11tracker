@@ -1,0 +1,14 @@
+CoffeeBike\OwasysBundle\Entity\Message\MessageA:
+    type: entity
+    table: null
+    repositoryClass: CoffeeBike\OwasysBundle\Entity\Message\MessageARepository
+    fields:
+        reason:
+            type: integer
+        info:
+            type: integer
+            nullable: true
+        km:
+            type: integer
+            nullable: true
+    lifecycleCallbacks: {  }

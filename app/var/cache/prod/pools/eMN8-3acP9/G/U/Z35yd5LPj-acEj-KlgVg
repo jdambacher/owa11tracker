@@ -1,0 +1,152 @@
+<?php return [PHP_INT_MAX, static function () {
+
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+            clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'name' => [
+                    'CoffeeBike\\OwasysBundle\\Entity\\Message\\MessageX',
+                ],
+                'namespace' => [
+                    'CoffeeBike\\OwasysBundle\\Entity\\Message',
+                ],
+                'rootEntityName' => [
+                    'CoffeeBike\\OwasysBundle\\Entity\\Message\\MessageX',
+                ],
+                'customRepositoryClassName' => [
+                    'CoffeeBike\\OwasysBundle\\Entity\\AbstractMessageRepository',
+                ],
+                'identifier' => [
+                    [
+                        'id',
+                    ],
+                ],
+                'generatorType' => [
+                    4,
+                ],
+                'fieldMappings' => [
+                    [
+                        'id' => [
+                            'id' => true,
+                            'fieldName' => 'id',
+                            'type' => 'integer',
+                            'columnName' => 'id',
+                            'declared' => 'CoffeeBike\\OwasysBundle\\Entity\\AbstractMessage',
+                        ],
+                        'triggerSource' => [
+                            'fieldName' => 'triggerSource',
+                            'type' => 'string',
+                            'columnName' => 'trigger_source',
+                            'length' => '1',
+                            'declared' => 'CoffeeBike\\OwasysBundle\\Entity\\AbstractMessage',
+                        ],
+                        'timestamp' => [
+                            'fieldName' => 'timestamp',
+                            'type' => 'bigint',
+                            'columnName' => 'timestamp',
+                            'declared' => 'CoffeeBike\\OwasysBundle\\Entity\\AbstractMessage',
+                        ],
+                        'version' => [
+                            'fieldName' => 'version',
+                            'type' => 'string',
+                            'length' => 255,
+                            'columnName' => 'version',
+                        ],
+                        'imei' => [
+                            'fieldName' => 'imei',
+                            'type' => 'string',
+                            'length' => '15',
+                            'columnName' => 'imei',
+                        ],
+                        'imsi' => [
+                            'fieldName' => 'imsi',
+                            'type' => 'string',
+                            'length' => '15',
+                            'columnName' => 'imsi',
+                        ],
+                        'bootloader' => [
+                            'fieldName' => 'bootloader',
+                            'type' => 'string',
+                            'length' => 255,
+                            'columnName' => 'bootloader',
+                        ],
+                    ],
+                ],
+                'fieldNames' => [
+                    [
+                        'id' => 'id',
+                        'trigger_source' => 'triggerSource',
+                        'timestamp' => 'timestamp',
+                        'version' => 'version',
+                        'imei' => 'imei',
+                        'imsi' => 'imsi',
+                        'bootloader' => 'bootloader',
+                    ],
+                ],
+                'columnNames' => [
+                    [
+                        'id' => 'id',
+                        'triggerSource' => 'trigger_source',
+                        'timestamp' => 'timestamp',
+                        'version' => 'version',
+                        'imei' => 'imei',
+                        'imsi' => 'imsi',
+                        'bootloader' => 'bootloader',
+                    ],
+                ],
+                'table' => [
+                    [
+                        'name' => 'message_x',
+                    ],
+                ],
+                'associationMappings' => [
+                    [
+                        'tracker' => [
+                            'fieldName' => 'tracker',
+                            'targetEntity' => 'CoffeeBike\\OwasysBundle\\Entity\\Tracker',
+                            'joinColumns' => [
+                                [
+                                    'referencedColumnName' => 'id',
+                                    'name' => 'tracker_id',
+                                ],
+                            ],
+                            'type' => 2,
+                            'mappedBy' => null,
+                            'inversedBy' => null,
+                            'isOwningSide' => true,
+                            'sourceEntity' => 'CoffeeBike\\OwasysBundle\\Entity\\Message\\MessageX',
+                            'fetch' => 2,
+                            'cascade' => [],
+                            'isCascadeRemove' => false,
+                            'isCascadePersist' => false,
+                            'isCascadeRefresh' => false,
+                            'isCascadeMerge' => false,
+                            'isCascadeDetach' => false,
+                            'sourceToTargetKeyColumns' => [
+                                'tracker_id' => 'id',
+                            ],
+                            'joinColumnFieldNames' => [
+                                'tracker_id' => 'tracker_id',
+                            ],
+                            'targetToSourceKeyColumns' => [
+                                'id' => 'tracker_id',
+                            ],
+                            'orphanRemoval' => false,
+                            'declared' => 'CoffeeBike\\OwasysBundle\\Entity\\AbstractMessage',
+                        ],
+                    ],
+                ],
+                'idGenerator' => [
+                    $o[1],
+                ],
+            ],
+        ],
+        $o[0],
+        []
+    );
+
+}];
